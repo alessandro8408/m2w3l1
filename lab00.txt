@@ -1,0 +1,7 @@
+Dopo aver impostato `vsftpd` in maniera appropriata ed essermi accertato della versione avviata utilizzando il comando `nmap` ristretto alla porta dedicata ai server FTP, ho cercato tra gli exploit offerti dal metasploit-framework quello adatto alla versione rilevata.
+Tale exploit permetteva l'utilizzo di solamente un payload. L'unica informazione mancante necessaria era l'ip della macchina metasploitable, che ho impostato essere 1.1.1.1.
+Dopo aver lanciato l'attacco, sono riuscito ad ottenere accesso da root.
+Ho quindi creato la cartella `/test_metasploit`, come richiesto da esercizio.
+
+Un exploit è un codice malevolo che sfrutta una vulnerabilità all'interno di un programma.
+In questo caso era proprio dell servizio `vsftpd` versione 2.3.4 dei sistemi unix, e mi ha permesso di ottenere l'accesso non autorizzato alla macchina vittima. `vsftpd` è un demone che permette la connessione tramite il protocollo FTP, che permette il trasferimento di file.
